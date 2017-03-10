@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" parallel="false" thread-count="1" configfailurepolicy="continue">
+    <!--<listeners>-->
+        <!--<listener class-name=""/>-->
+    <!--</listeners>-->
+
+    <!--全局变量-->
+    <parameter name="testEnv" value="${testEnv}"/>
+    <test name="test_module1">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.vdrips.testcase.TestA"/>
+        </classes>
+    </test>
+</suite>

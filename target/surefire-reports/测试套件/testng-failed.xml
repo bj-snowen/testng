@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [测试套件]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="testEnv" value="test"/>
+  <test name="test_module1">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vdrips.testcase.TestA"/>
+    </classes>
+  </test> <!-- test_module1 -->
+  <test name="test_module1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vdrips.testcase.TestA">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="dependsMethod"/>
+          <include name="method"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.vdrips.testcase.TestA -->
+    </classes>
+  </test> <!-- test_module1(failed) -->
+</suite> <!-- Failed suite [测试套件] -->

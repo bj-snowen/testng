@@ -1,0 +1,8 @@
+#surefire
+#Fri Mar 10 15:52:25 CST 2017
+testEnv=test
+user.dir=/Volumes/HD2/server_code/testng
+localRepository=/Users/baixf/.m2/repository
+xmlFileName=testng.xml
+basedir=/Volumes/HD2/server_code/testng
+testEnvironment=test
