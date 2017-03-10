@@ -11,11 +11,13 @@ target/
 .project
 .classpath
 
-# idea ignore
+# IntelliJ project files ignore
 .idea/
 *.ipr
 *.iml
 *.iws
+out
+gen
 
 # temp ignore
 *.log
@@ -27,4 +29,3 @@ target/
 # system ignore
 .DS_Store
 Thumbs.db
-
